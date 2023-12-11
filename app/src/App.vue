@@ -122,6 +122,7 @@ const search = (search: string) => {
           id="contest_search"
           class="input-search w-[calc(100%-4rem)] py-2 pr-6 rounded-md outline-none <md:shadow-box border border-light-900"
           placeholder="UID 用户名 日期 (3.12)..."
+          autocomplete="off"
           v-model="searchInput"
           @keypress.enter="search(searchInput)"
         />
